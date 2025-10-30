@@ -32,7 +32,7 @@ namespace JobTask.Controllers
         }
 
         [HttpPost("create-bulk-users")]
-        public async Task<IActionResult> CreateBulkUsers()
+        public async Task<IActionResult> CreateBulkUsers([FromQuery] int userCount = 10)
         {
             var faker = new Faker<User>()
                 .RuleFor(u => u.Name, f => f.Name.FullName())
@@ -40,12 +40,12 @@ namespace JobTask.Controllers
                 .RuleFor(u => u.Email, f => f.Internet.Email())
                 .RuleFor(u => u.TimeStamp, f => f.Date.Recent(10));
 
-            var users = faker.Generate(10000);
+            var users = faker.Generate(userCount);
 
             await _context.Users.AddRangeAsync(users);
             await _context.SaveChangesAsync();
             _cache.Remove("users_cache");
-            return Ok(new { Message = "10,000 users created successfully!" });
+            return Ok(new { Message = $"{userCount} users created successfully!" });
         }
 
         [HttpGet("fetch-users")]
