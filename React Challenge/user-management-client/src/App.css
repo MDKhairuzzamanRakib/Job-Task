@@ -1,0 +1,32 @@
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-right: 10px;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #0078d7;
+  color: white;
+}
