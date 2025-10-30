@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36301.6 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTask", "JobTask.csproj", "{9C2C9DC9-B159-4852-B641-7DD19711724C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemHealthLogger", "..\SystemHealthLogger\SystemHealthLogger.csproj", "{42B061C5-7FC5-4E0B-8ACC-E528B7CA3B95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9C2C9DC9-B159-4852-B641-7DD19711724C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C2C9DC9-B159-4852-B641-7DD19711724C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C2C9DC9-B159-4852-B641-7DD19711724C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42B061C5-7FC5-4E0B-8ACC-E528B7CA3B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B061C5-7FC5-4E0B-8ACC-E528B7CA3B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B061C5-7FC5-4E0B-8ACC-E528B7CA3B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42B061C5-7FC5-4E0B-8ACC-E528B7CA3B95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
